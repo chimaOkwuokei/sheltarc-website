@@ -2,10 +2,8 @@ import Hero from "./hero";
 import About from "./about";
 import Contact from "./contact";
 import Project from "./project";
-import Experience from "./experience";
-import Research from "./research";
-import Blog
- from "./blog";
+import Design from "./design";
+import Leadership from "./leadership";
 import Footer from "./footer";
 
 export {
@@ -13,8 +11,7 @@ export {
     About,
     Contact,
     Project,
-    Experience,
-    Research,
-    Blog,
+    Design,
+    Leadership,
     Footer
 }

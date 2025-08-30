@@ -8,10 +8,9 @@ import { Link as ScrollLink } from "react-scroll";
 const sections = [
     "Home",
     "About",
-    "Experience",
     "Projects",
-    "Research",
-    "Blogs",
+    "Designs",
+    "Leadership",
     "Contact",
 ];
 
@@ -57,7 +56,7 @@ export default function HeroSection() {
                             className="h-10 w-10 object-contain"
                         />
                         <h1 className="font-bold text-lg sm:text-xl text-[#E3963E] tracking-wide">
-                            SHELT + ARC
+                            SHELT+ARC
                         </h1>
                     </div>
 
@@ -69,7 +68,7 @@ export default function HeroSection() {
                                 to={section.toLowerCase()}
                                 smooth={true}
                                 duration={500}
-                                className="cursor-pointer text-white hover:text-[#E3963E] transition"
+                                className="cursor-pointer text-[#E3963E] hover:text-[#E3963E]/50 transition"
                             >
                                 {section}
                             </ScrollLink>
@@ -84,9 +83,9 @@ export default function HeroSection() {
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             {isOpen ? (
-                                <X className="text-white" />
+                                <X className="text-[#E3963E]" />
                             ) : (
-                                <Menu className="text-white" />
+                                <Menu className="text-[#E3963E]" />
                             )}
                         </Button>
                     </div>
@@ -111,7 +110,7 @@ export default function HeroSection() {
                 )}
             </div>
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/70 z-10"></div>
 
             {/* Hero Section */}
             <section
@@ -131,13 +130,22 @@ export default function HeroSection() {
                                     <img src="/elektrint.jpg" alt="Client 2" className="w-8 h-8 rounded-full object-contain" />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/novartis.jpg" alt="Client 4" className="w-8 h-8 object-contain" />
+                                </div>
+                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/shell.png" alt="Client 3" className="w-8 h-8 object-contain" />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/templars.jpg" alt="Client 4" className="w-8 h-8 object-contain" />
                                 </div>
+                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/mobil.png" alt="Client 4" className="w-8 h-8 object-contain" />
+                                </div>
+                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/dozzy.jpeg" alt="Client 4" className="w-8 h-8 object-contain" />
+                                </div>
                             </div>
-                            <p className="text-sm text-gray-300 font-medium">50+ successful projects completed</p>
+                            <p className="text-sm text-gray-300 font-medium">Successfully served 50+ clients</p>
                         </div>
                     </div>
                     {/* Left Content */}

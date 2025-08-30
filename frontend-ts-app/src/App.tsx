@@ -1,16 +1,15 @@
 import './App.css'
-import { About, Blog, Contact, Experience, Footer, Hero, Project, Research } from './pages'
+import { About,Contact, Footer, Hero, Project, Design, Leadership} from './pages'
 
 function App() {
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden bg-white">
+    <div style={{ fontFamily: "Century Gothic, sans-serif" }} className="flex flex-col min-h-screen overflow-x-hidden bg-white">
       <Hero />
       <About />
-      <Experience />
       <Project />
-      <Research />
-      <Blog />
+      <Design/>
+      <Leadership />
       <Contact />
       <Footer />
     </div>
