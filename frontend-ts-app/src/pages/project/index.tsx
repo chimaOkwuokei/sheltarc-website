@@ -22,7 +22,7 @@ export default function Project() {
     },
     {
       category: "Renovation",
-      image: "/project4.jpg",
+      image: "/project4.png",
       title: "Residential Building",
       description:
         "A full-scale interior and exterior renovation project that modernized the residence, blending functionality with enhanced architectural appeal for long-term comfort and value.",
@@ -30,7 +30,7 @@ export default function Project() {
     },
     {
       category: "Renovation",
-      image: "/project3.png",
+      image: "/project3.jpg",
       title: "Citadel Nominee Project",
       description:
         "Extensive exterior renovation focused on elevating the property’s image and strengthening its brand presence through refined design and structural upgrades.",
