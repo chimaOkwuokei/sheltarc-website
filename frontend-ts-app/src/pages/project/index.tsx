@@ -111,7 +111,7 @@ export default function Project() {
                   alt={project.title}
                   width={500}
                   height={300}
-                  className="w-full h-64 object-center"
+                  className="w-full h-64 object-fill"
                 />
                 <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-full shadow">
                   {project.category}
