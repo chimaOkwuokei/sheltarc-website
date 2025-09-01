@@ -130,20 +130,17 @@ export default function HeroSection() {
                                     <img src="/elektrint.jpg" alt="Client 2" className="w-8 h-8 rounded-full object-contain" />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
-                                    <img src="/novartis.jpg" alt="Client 4" className="w-8 h-8 object-contain" />
-                                </div>
-                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/shell.png" alt="Client 3" className="w-8 h-8 object-contain" />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/templars.jpg" alt="Client 4" className="w-8 h-8 object-contain" />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
-                                    <img src="/mobil.png" alt="Client 4" className="w-8 h-8 object-contain" />
+                                    <img src="/scm.png" alt="Client 4" className="w-8 h-8 rounded-full object-contain" />
                                 </div>
-                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                {/* <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/dozzy.jpeg" alt="Client 4" className="w-8 h-8 object-contain" />
-                                </div>
+                                </div> */}
                             </div>
                             <p className="text-sm text-gray-300 font-medium">Successfully served 50+ clients</p>
                         </div>

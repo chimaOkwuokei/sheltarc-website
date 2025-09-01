@@ -22,12 +22,20 @@ export default function Project() {
     },
     {
       category: "Renovation",
-      image: "/project3.jpg",
-      title: "Citadel Nominee Project",
+      image: "/project4.jpg",
+      title: "Residential Building",
       description:
-        "Comprehensive exterior renovation designed to elevate brand presence and enhance architectural appeal.",
-      location: "Lagos, Nigeria",
+        "Comprehensive interior and exterior renovation designed to enhance architectural appeal.",
+      location: "Abuja, Nigeria",
     },
+    // {
+    //   category: "Renovation",
+    //   image: "/project3.jpg",
+    //   title: "Citadel Nominee Project",
+    //   description:
+    //     "Comprehensive exterior renovation designed to elevate brand presence and enhance architectural appeal.",
+    //   location: "Lagos, Nigeria",
+    // },
   ]
 
   const corporateProjects = [

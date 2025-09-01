@@ -1,47 +1,7 @@
 'use client'
-
-import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-scroll'
 
 export default function AboutSection() {
-  const [years, setYears] = useState(0)
-  const [satisfaction, setSatisfaction] = useState(0)
-  const [projects, setProjects] = useState(0)
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const [triggered, setTriggered] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !triggered) {
-          setTriggered(true)
-
-          // Animate counters
-          let y = 0
-          let s = 0
-          let p = 0
-
-          const interval = setInterval(() => {
-            if (y < 15) y++
-            if (s < 98) s += 14
-            if (p < 100) p += 10
-
-            setYears(y)
-            setSatisfaction(s)
-            setProjects(p)
-
-            if (y >= 15 && s >= 98 && p >= 100) clearInterval(interval)
-          }, 50)
-        }
-      },
-      { threshold: 0.5 }
-    )
-
-    if (sectionRef.current) observer.observe(sectionRef.current)
-
-    return () => observer.disconnect()
-  }, [triggered])
-
   return (
     <div className="relative min-h-screen lg:p-10">
       {/* Background */}
@@ -55,7 +15,6 @@ export default function AboutSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/50 z-10"></div>
 
       <section
-        ref={sectionRef}
         id="about"
         className="relative z-20 min-h-screen py-20 px-6 max-w-screen-xl mx-auto"
       >
@@ -86,7 +45,7 @@ export default function AboutSection() {
           {/* Circles */}
           <div className="flex flex-wrap gap-6 justify-center md:justify-start">
             <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full bg-white/10 border border-[#E3963E]/40 text-center">
-              <div className="text-3xl font-bold text-[#E3963E]">{years}+</div>
+              <div className="text-3xl font-bold text-[#E3963E]">10+</div>
               <div className="text-xs uppercase text-gray-300 mt-1">
                 Years of Experience
               </div>
@@ -94,7 +53,7 @@ export default function AboutSection() {
 
             <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full bg-[#E3963E] text-center">
               <div className="text-3xl font-bold text-black">
-                {satisfaction}%
+                98%
               </div>
               <div className="text-xs uppercase text-black mt-1">
                 Client Satisfaction
@@ -102,7 +61,7 @@ export default function AboutSection() {
             </div>
 
             <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full bg-black text-center">
-              <div className="text-3xl font-bold text-white">{projects}+</div>
+              <div className="text-3xl font-bold text-white">100+</div>
               <div className="text-xs uppercase text-gray-300 mt-1">
                 Projects Completed
               </div>

@@ -18,7 +18,7 @@ export default function Contact() {
       {/* Content */}
       <section
         id="contact"
-        className="relative z-20 min-h-screen flex items-center px-6 md:px-12 lg:px-20"
+        className="relative z-20 py-20 min-h-screen flex items-center px-6 md:px-12 lg:px-20"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
           {/* Project Scope */}

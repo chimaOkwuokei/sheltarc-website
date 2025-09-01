@@ -28,6 +28,14 @@ export default function Design() {
       // location: "Surabaya, Indonesia",
       // date: "Mar – May 2024",
     },
+    {
+      // category: "Residential",
+      image: "/design4.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
   ]
 
   return (
@@ -64,9 +72,9 @@ export default function Design() {
                   height={300}
                   className="w-full h-64 object-cover"
                 />
-                <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-full shadow">
+                {/* <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-full shadow"> */}
                   {/* {design.category} */}
-                </span>
+                {/* </span> */}
               </div>
 
               {/* <CardContent className="p-6">
