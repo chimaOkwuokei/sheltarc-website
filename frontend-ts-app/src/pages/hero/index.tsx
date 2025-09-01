@@ -138,6 +138,9 @@ export default function HeroSection() {
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/scm.png" alt="Client 4" className="w-8 h-8 rounded-full object-contain" />
                                 </div>
+                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/greenwich.png" alt="Client 4" className="w-8 h-8 rounded-full object-contain" />
+                                </div>
                                 {/* <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/dozzy.jpeg" alt="Client 4" className="w-8 h-8 object-contain" />
                                 </div> */}

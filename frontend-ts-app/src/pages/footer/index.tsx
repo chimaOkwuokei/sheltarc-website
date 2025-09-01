@@ -19,7 +19,7 @@ export default function Footer() {
                     </p> */}
                     <div className="flex gap-4 mt-6">
                         <a
-                            href="tel:08033244484"
+                            href="tel:02013424656"
                             aria-label="Phone"
                             className="p-3 rounded-md hover:bg-white/50"
                         >
@@ -81,10 +81,14 @@ export default function Footer() {
                             I138 Ikota Shopping Complex VGC, Lekki, Ajah, Lagos State, Nigeria.
                         </p>
                         <p>
-                            <span className="font-semibold">Tel 1:</span> 08033244484
+                            <span className="font-semibold">Tel 1:</span> 02013424656
+                        </p>
+
+                        <p>
+                            <span className="font-semibold">Tel 2:</span> 07058423700
                         </p>
                         <p>
-                            <span className="font-semibold">Tel 2:</span> 08096778796
+                            <span className="font-semibold">Tel 3:</span> 08033244484
                         </p>
                     </div>
                 </div>

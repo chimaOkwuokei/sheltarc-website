@@ -25,17 +25,26 @@ export default function Project() {
       image: "/project4.jpg",
       title: "Residential Building",
       description:
-        "Comprehensive interior and exterior renovation designed to enhance architectural appeal.",
+        "A full-scale interior and exterior renovation project that modernized the residence, blending functionality with enhanced architectural appeal for long-term comfort and value.",
       location: "Abuja, Nigeria",
     },
-    // {
-    //   category: "Renovation",
-    //   image: "/project3.jpg",
-    //   title: "Citadel Nominee Project",
-    //   description:
-    //     "Comprehensive exterior renovation designed to elevate brand presence and enhance architectural appeal.",
-    //   location: "Lagos, Nigeria",
-    // },
+    {
+      category: "Renovation",
+      image: "/project3.png",
+      title: "Citadel Nominee Project",
+      description:
+        "Extensive exterior renovation focused on elevating the property’s image and strengthening its brand presence through refined design and structural upgrades.",
+      location: "Lagos, Nigeria",
+    },
+    {
+      category: "Renovation",
+      image: "/project5.jpg",
+      title: "NGX Project",
+      description:
+        "Completed a high-traffic carpet installation for the NGX Group, delivering a durable and aesthetically pleasing flooring solution suited for continuous corporate use.",
+      location: "Lagos, Nigeria",
+    },
+
   ]
 
   const corporateProjects = [
@@ -102,7 +111,7 @@ export default function Project() {
                   alt={project.title}
                   width={500}
                   height={300}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-center"
                 />
                 <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-full shadow">
                   {project.category}

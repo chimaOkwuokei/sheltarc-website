@@ -36,6 +36,46 @@ export default function Design() {
       // location: "Surabaya, Indonesia",
       // date: "Mar – May 2024",
     },
+    {
+      // category: "Residential",
+      image: "/design5.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
+    {
+      // category: "Residential",
+      image: "/design6.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
+    {
+      // category: "Residential",
+      image: "/design7.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
+    {
+      // category: "Residential",
+      image: "/design8.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
+    {
+      // category: "Residential",
+      image: "/design9.jpg",
+      // title: "Retail Renovation design",
+      // description: "Full interior remodel to enhance space functionality and brand presence.",
+      // location: "Surabaya, Indonesia",
+      // date: "Mar – May 2024",
+    },
   ]
 
   return (
