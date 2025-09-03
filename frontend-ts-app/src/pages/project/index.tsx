@@ -44,6 +44,14 @@ export default function Project() {
         "Completed a high-traffic carpet installation for the NGX Group, delivering a durable and aesthetically pleasing flooring solution suited for continuous corporate use.",
       location: "Lagos, Nigeria",
     },
+    {
+      category: "Design",
+      image: "/project6.jpg",
+      title: "Our Lady Of The Redeemer Catholic Church",
+      description:
+        "Developed a comprehensive 3D master plan design for Our Lady of the Redeemer Catholic Church, blending functionality with aesthetic detail to support future development.",
+      location: "Lagos, Nigeria",
+    },
 
   ]
 
