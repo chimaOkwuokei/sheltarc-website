@@ -45,14 +45,21 @@ export default function Project() {
       location: "Lagos, Nigeria",
     },
     {
-      category: "Design",
+      category: "Design Development",
       image: "/project6.jpg",
       title: "Our Lady Of The Redeemer Catholic Church",
       description:
         "Developed a comprehensive 3D master plan design for Our Lady of the Redeemer Catholic Church, blending functionality with aesthetic detail to support future development.",
       location: "Lagos, Nigeria",
     },
-
+    {
+      category: "Design Development",
+      image: "/design1.jpg",
+      title: "Dozzy Oil New Branch Office Outlet, Lekki",
+      description:
+        "Commissioned by Dozzy Oil management to design their new branch office outlet in Lekki, Lagos, as part of the company’s business expansion strategy.",
+      location: "Lagos, Nigeria",
+    },
   ]
 
   const corporateProjects = [

@@ -6,14 +6,6 @@ export default function Design() {
   const designs = [
     {
       // category: "Residential",
-      image: "/design1.jpg", // replace with your image path
-      // title: "High-Rise Office Tower",
-      // description: "Urban commercial space built with efficiency, sustainability, and modern design.",
-      // location: "Jakarta, Indonesia",
-      // date: "Jul 2023 – Apr 2024",
-    },
-    {
-      // category: "Residential",
       image: "/design2.png",
       // title: "Modern Residential Villa",
       // description: "Minimalist architecture with eco-friendly materials and smart home integration.",
