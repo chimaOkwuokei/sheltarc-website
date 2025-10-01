@@ -60,6 +60,14 @@ export default function Project() {
         "Commissioned by Dozzy Oil management to design their new branch office outlet in Lekki, Lagos, as part of the company’s business expansion strategy.",
       location: "Lagos, Nigeria",
     },
+    {
+      category: "Renovation",
+      image: "/project7.jpg",
+      title: "SCM Capital",
+      description:
+        "Renovated and modernized a corporate meeting room for SCM Capital, transforming the space with a sleek and functional design that enhances collaboration, comfort, and professionalism.",
+      location: "Lagos, Nigeria",
+    },
   ]
 
   const corporateProjects = [
