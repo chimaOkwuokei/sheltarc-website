@@ -115,7 +115,7 @@ export default function HeroSection() {
             {/* Hero Section */}
             <section
                 id="home"
-                className="relative min-h-screen flex items-center max-w-7xl mx-auto px-6 pt-22 z-20"
+                className="relative min-h-screen flex items-center max-w-7xl mx-auto px-3 pt-22 z-20"
             >
                 <div className="items-center justify-between w-full gap-12 lg:p-10">
                     {/* Client Logos Section */}
@@ -143,6 +143,9 @@ export default function HeroSection() {
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
                                     <img src="/dozzy.jpeg" alt="Client 4" className="w-8 h-8 object-contain" />
+                                </div>
+                                <div className="w-12 h-12 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-lg">
+                                    <img src="/ren.png" alt="Client 4" className="w-8 h-8 object-contain" />
                                 </div>
                             </div>
                             <p className="text-sm text-gray-300 font-medium">Served 50+ clients</p>

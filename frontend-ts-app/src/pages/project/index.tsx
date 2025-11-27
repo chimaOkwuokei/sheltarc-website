@@ -68,6 +68,15 @@ export default function Project() {
         "Renovated and modernized a corporate meeting room for SCM Capital, transforming the space with a sleek and functional design that enhances collaboration, comfort, and professionalism.",
       location: "Lagos, Nigeria",
     },
+    {
+      category: "Renovation",
+      image: "/project8.jpeg",
+      title: "Shell Project",
+      description:
+        "Renovation of office restroom facilities for Shell, including the installation of new hand dryers and upgrades to enhance cleanliness, functionality, and overall user experience.",
+      location: "Lagos, Nigeria",
+    },
+
   ]
 
   const corporateProjects = [
