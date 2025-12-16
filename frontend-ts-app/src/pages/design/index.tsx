@@ -68,14 +68,14 @@ export default function Design() {
       // location: "Surabaya, Indonesia",
       // date: "Mar – May 2024",
     },
-    {
+    // {
       // category: "Residential",
-      image: "/design10.jpeg",
+      // image: "/design10.jpeg",
       // title: "Retail Renovation design",
       // description: "Full interior remodel to enhance space functionality and brand presence.",
       // location: "Surabaya, Indonesia",
       // date: "Mar – May 2024",
-    },
+    // },
   ]
 
   return (

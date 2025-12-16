@@ -6,7 +6,7 @@ export default function Project() {
   const projects = [
     {
       category: "Residential",
-      image: "/project1.jpg",
+      image: "/project1.png",
       title: "Residential Building",
       description:
         "A modern residential development designed with efficiency, sustainability, and contemporary aesthetics in mind.",
