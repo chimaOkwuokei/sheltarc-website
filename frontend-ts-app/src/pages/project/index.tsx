@@ -24,6 +24,20 @@ export default function Project() {
       location: "Lagos, Nigeria",
     },
     {
+      category: "Renovation",
+      image: "/floor1.jpeg",
+      title: "NGX Upgrade Works - 23rd Floor",
+      description: "A complete aesthetic overhaul of the corridor featuring custom continuous wood paneling, premium patterned carpet tiles, and modern recessed lighting for a bright, professional finish.",
+      location: "Lagos, Nigeria",
+    },
+    {
+      category: "Renovation",
+      image: "/floor2.jpeg",
+      title: "NGX Upgrade Works - 21st Floor",
+      description: "Workspace modernization integrating frosted glass partitions with rich wood paneling, seamlessly carrying the updated corporate aesthetic into functional office zones.",
+      location: "Lagos, Nigeria",
+    },
+    {
       category: "Residential",
       image: "/project1.png",
       title: "Residential Building",
@@ -184,7 +198,7 @@ export default function Project() {
                   alt={project.title}
                   width={500}
                   height={300}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-fit"
                 />
                 <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-sm shadow-sm border border-gray-100">
                   {project.category}
@@ -194,7 +208,7 @@ export default function Project() {
               <CardContent className="pt-6">
                 <div className="space-y-2">
                   <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
-                  <p className="text-gray-600 text-sm line-clamp-3">{project.description}</p>
+                  <p className="text-gray-600 text-sm ">{project.description}</p>
                   <div className="flex items-center justify-between text-sm text-gray-500 pt-2">
                     <span>{project.location}</span>
                   </div>
