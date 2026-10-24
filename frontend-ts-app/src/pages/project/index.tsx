@@ -1,9 +1,28 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef } from "react";
 
 export default function Project() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      // Scrolls exactly the width of the container to show the next batch
+      const clientWidth = scrollRef.current.clientWidth;
+      const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
   const projects = [
+    {
+      category: "Renovation",
+      image: "/ngx_upgrade.jpeg",
+      title: "NGX Upgrade Works",
+      description: "Comprehensive interior renovation and upgrade works carried out across the 11th, 21st, and 23rd floors, modernizing the workspace for enhanced functionality and professional appeal.",
+      location: "Lagos, Nigeria",
+    },
     {
       category: "Residential",
       image: "/project1.png",
@@ -133,27 +152,50 @@ export default function Project() {
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#E3963E] to-transparent mx-auto"></div>
         </div>
 
-        {/* Highlighted Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {/* Controls Header */}
+        <div className="flex justify-end gap-2 mb-6">
+          <button
+            onClick={() => scroll("left")}
+            className="p-2 border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors shadow-sm"
+          >
+            <ChevronLeft size={20} strokeWidth={2} />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            className="p-2 border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors shadow-sm"
+          >
+            <ChevronRight size={20} strokeWidth={2} />
+          </button>
+        </div>
+
+        {/* Horizontal Scroll Slider */}
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 mb-20 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+        >
           {projects.map((project, index) => (
-            <Card key={index} className="rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative bottom-6">
+            <Card
+              key={index}
+              className="w-full sm:w-[350px] md:w-[400px] shrink-0 snap-start rounded-none border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+            >
+              <div className="relative">
                 <img
                   src={project.image}
                   alt={project.title}
                   width={500}
                   height={300}
-                  className="w-full h-64 object-fill"
+                  className="w-full h-64 object-cover"
                 />
-                <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-full shadow">
+                <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-sm shadow-sm border border-gray-100">
                   {project.category}
                 </span>
               </div>
-              <CardContent>
-                <div className="pb-6 space-y-2">
+
+              <CardContent className="pt-6">
+                <div className="space-y-2">
                   <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
-                  <p className="text-gray-600 text-sm">{project.description}</p>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
+                  <p className="text-gray-600 text-sm line-clamp-3">{project.description}</p>
+                  <div className="flex items-center justify-between text-sm text-gray-500 pt-2">
                     <span>{project.location}</span>
                   </div>
                 </div>
@@ -163,6 +205,7 @@ export default function Project() {
         </div>
 
         {/* Corporate & Institutional Projects */}
+        {/* Note: This block was previously trapped inside the slider. It has been moved out to stack normally. */}
         <div className="space-y-12">
           <h3 className="text-3xl font-bold text-gray-900 text-center">Major Corporate & Institutional Projects</h3>
           <div className="mt-10 space-y-8">
@@ -174,7 +217,8 @@ export default function Project() {
             ))}
           </div>
         </div>
+
       </section>
     </div>
-  )
+  );
 }

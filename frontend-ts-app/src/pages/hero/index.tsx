@@ -16,7 +16,7 @@ const sections = [
 
 export default function HeroSection() {
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
+    const [_scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,11 +42,7 @@ export default function HeroSection() {
             {/* Navbar */}
             <div className="fixed top-0 left-0 w-full z-50 px-4 pt-3 transition-all duration-300">
                 <div
-                    className={`mx-auto max-w-7xl flex justify-between items-center px-6 py-3 rounded-2xl shadow-lg transition-all duration-300
-            ${scrolled
-                            ? "bg-white/50 backdrop-blur-lg border border-white/30"
-                            : "bg-white/20 backdrop-blur-md border border-white/20"
-                        }`}
+                    className={`mx-auto max-w-7xl flex justify-between items-center px-6 py-3 rounded-2xl shadow-lg transition-all duration-300 bg-white`}
                 >
                     {/* Logo + Name */}
                     <div className="flex items-center space-x-3">
