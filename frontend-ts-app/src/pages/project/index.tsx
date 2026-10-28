@@ -25,6 +25,13 @@ export default function Project() {
     },
     {
       category: "Renovation",
+      image: "/ceo_regulations_NGX.jpeg",
+      title: "NGX Upgrade Works - CEO Regulations Office",
+      description: "Premium interior renovation of the CEO Regulations Office, featuring custom wood paneling, integrated shelving with ambient lighting, and a modernized executive workspace designed for high-level functionality and professional appeal.",
+      location: "Lagos, Nigeria",
+    },
+    {
+      category: "Renovation",
       image: "/floor1.jpeg",
       title: "NGX Upgrade Works - 23rd Floor",
       description: "A complete aesthetic overhaul of the corridor featuring custom continuous wood paneling, premium patterned carpet tiles, and modern recessed lighting for a bright, professional finish.",
@@ -55,7 +62,7 @@ export default function Project() {
     },
     {
       category: "Renovation",
-      image: "/project4.png",
+      image: "/apoafter.png",
       title: "Residential Building",
       description:
         "A full-scale interior and exterior renovation project that modernized the residence, blending functionality with enhanced architectural appeal for long-term comfort and value.",
@@ -188,33 +195,35 @@ export default function Project() {
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 mb-20 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
           {projects.map((project, index) => (
-            <Card
+            <div
               key={index}
-              className="w-full sm:w-[350px] md:w-[400px] shrink-0 snap-start rounded-none border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+              className="w-full sm:w-[350px] md:w-[400px] shrink-0 snap-start flex flex-col border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden"
             >
-              <div className="relative">
+              {/* Image Section */}
+              <div className="relative h-64 w-full bg-gray-50 flex items-center justify-center shrink-0">
                 <img
                   src={project.image}
                   alt={project.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-64 object-fit"
+                  className="w-full h-full object-top object-contain"
                 />
                 <span className="absolute top-4 left-4 bg-white text-orange-500 text-sm font-medium px-3 py-1 rounded-sm shadow-sm border border-gray-100">
                   {project.category}
                 </span>
               </div>
 
-              <CardContent className="pt-6">
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
-                  <p className="text-gray-600 text-sm ">{project.description}</p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 pt-2">
-                    <span>{project.location}</span>
-                  </div>
+              {/* Content Section */}
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 text-sm flex-grow">
+                  {project.description}
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 pt-4 mt-2">
+                  <span>{project.location}</span>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 
